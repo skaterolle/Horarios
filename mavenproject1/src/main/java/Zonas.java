@@ -18,7 +18,7 @@ public class Zonas {
     
     Local hor = new Local();
 
-    public void zona(String zona1, String zona2) {
+    public String zona(String zona1, String zona2) {
         Date purchaseDate = new Date();
 
         System.out.println("Fecha/Hora "+ zona1);
@@ -29,6 +29,8 @@ public class Zonas {
 
         System.out.println("Misma Fecha/Hora en " + zona2);
         System.out.println(outFormat.format(purchaseDate));
+        
+        return (String)outFormat.format(purchaseDate);
 
     }
 
