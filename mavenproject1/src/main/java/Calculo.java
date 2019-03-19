@@ -9,9 +9,9 @@
  * @author usuario
  */
 public class Calculo {
-    public void Calcular(String zona1, String zona2)
+    public String Calcular(String zona1, String zona2)
     {
     Zonas zon = new Zonas();
-    zon.zona(zona1, zona2);
+    return zon.zona(zona1, zona2);
     }
 }
