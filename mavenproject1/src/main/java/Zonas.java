@@ -8,6 +8,28 @@
  *
  * @author usuario
  */
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+
 public class Zonas {
     
+    Local hor = new Local();
+
+    public void zona(String zona1, String zona2) {
+        Date purchaseDate = new Date();
+
+        System.out.println("Fecha/Hora "+ zona1);
+        System.out.println(hor.cogerHora());
+
+        DateFormat outFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        outFormat.setTimeZone(TimeZone.getTimeZone(zona2));
+
+        System.out.println("Misma Fecha/Hora en " + zona2);
+        System.out.println(outFormat.format(purchaseDate));
+
+    }
+
 }
