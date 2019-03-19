@@ -16,6 +16,10 @@ import java.util.Date;
  * @author usuario
  */
 public class Local {
- Date fechaAntigua = new Date();
+ 
+    public void cogerHora()
+    {
+    Date fechaAntigua = new Date();
 LocalDate fechaNueva = fechaAntigua.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+    }
 }
